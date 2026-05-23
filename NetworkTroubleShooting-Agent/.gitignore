@@ -1,0 +1,125 @@
+# ========================
+# .gitignore for BlueCom Network Troubleshooter
+# ========================
+
+# ========================
+# CRITICAL - NEVER COMMIT
+# ========================
+# Environment variables with secrets
+.env
+.env.local
+.env.production
+
+# AWS credentials (MUST EXCLUDE - has access keys)
+aws_client.py
+
+# Any file with API keys or credentials
+*credentials*
+*secrets*
+*keys.json
+
+# ========================
+# Python
+# ========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv
+
+# ========================
+# Data & Models
+# ========================
+# Datasets (can be large, store in S3 or data lake)
+data/
+!data/.gitkeep
+
+# Pre-trained models (large files)
+models/
+!models/.gitkeep
+
+# Qdrant local data
+qdrant_data/
+
+# ========================
+# Logs & Output
+# ========================
+# Application logs
+logs/
+*.log
+
+# Feedback data (contains user data)
+feedback.csv
+
+# ========================
+# IDE & Editor
+# ========================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ========================
+# OS
+# ========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ========================
+# Temporary Files
+# ========================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ========================
+# Testing
+# ========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ========================
+# Pickle & Binary Files
+# ========================
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# ========================
+# Package Management
+# ========================
+*.egg-info/
+dist/
+build/
+
+# ========================
+# Streamlit
+# ========================
+.streamlit/secrets.toml
