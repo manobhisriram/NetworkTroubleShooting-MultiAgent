@@ -1,4 +1,4 @@
-# ⚡ # Network Troubleshooting Multi-Agent AI System
+# ⚡  Network Troubleshooting Multi-Agent AI System
 
 <div align="center">
 
